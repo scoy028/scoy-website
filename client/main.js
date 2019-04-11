@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import About from './about'
-import Work from './work'
-import Contact from './contact'
+import About from './components/about'
+import Work from './components/work'
+import Contact from './components/contact'
 
 export default class Main extends Component {
   render() {
