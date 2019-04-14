@@ -8,50 +8,54 @@ body {
     height: 600px;
 }
 
+
 /****** GRID ******/
 
 .full-width {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .half-width {
     max-width: 600px;
     float: left;
 }
+
 .third-width {
     max-width: 400px;
     float: left;
 }
 
+
 /****** HEADER ******/
 
-header {
-    height: 800px;
+
+.logo {
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    font-size: 1.5em !important;
+    color: #bbc085 !important;
+    padding: 5vh !important;
+    float: left !important;
+}
+
+.mr-auto .nav-links {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #828282;
+    padding-left: 5vw !important;
+    float: right !important;
+}
+
+#intro {
     background: url('../img/field.png');
+    height: 70;
     background-size: cover;
 }
 
-header h1 {
-    font-family: 'Lora', serif;
-    font-size: 30px;
-    color: #bbc085;
-    padding: 50px 0;
-}
-nav {
-    float: right;
-    padding: 75px 40px;
-}
-nav ul li{
-    display: inline-block;
-}
-nav ul li a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 18px;
-    color: #828282;
-    padding-left: 80px;
-}
-header h2 {
+#intro h2 {
     width: 1000px;
     clear: both;
     font-family: 'Lora', serif;
@@ -60,9 +64,11 @@ header h2 {
     color: #bbc085;
     padding: 300px 0;
 }
-header h2 span {
+
+#intro h2 span {
     color: #2b2b2b;
 }
+
 
 /****** ABOUT ******/
 
@@ -74,12 +80,14 @@ header h2 span {
     font-family: 'Lora', serif;
     font-size: 36px;
 }
+
 #about p {
     font-size: 21px;
     color: #7f7f7f;
     line-height: 42px;
     padding-right: 50px;
 }
+
 
 /****** WORK ******/
 
@@ -110,51 +118,78 @@ header h2 span {
     padding: 0 35px;
 }
 
+
 /****** CONTACT ******/
 
 #contact {
     background-color: #ebebeb;
 }
+
 #contact .full-width {
     padding: 110px 0;
 }
+
 #contact-img{
     border: 12px solid #ffffff;
 }
+
 #contact h2, #email-header, #socialmedia-header, #contact ul {
     padding-left: 115px;
 }
+
 #envelope {
     padding: 0 10px 0 115px;
 }
+
 #contact h2 {
     font-family: 'Lora', serif;
     font-size: 36px;
 }
+
 #email-header{
     font-size: 32px;
     font-weight: 400;
     margin: -30px 0 5px 0;
 }
+
 #socialmedia-header {
     font-weight: bold;
     font-size: 29px;
     margin: 40px 0 0px 0;
 }
+
 #contact a {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
     font-size: 28px;
 }
+
 #contact ul {
     list-style: none;
 }
+
 #contact ul li {
      display: inline-block;
 }
+
 #contact ul img {
     font-size: 32px;
     padding-right: 48px;
 }
 
+
+/****** VIEWPORT ******/
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+  @-ms-viewport {
+    width: device-width ;
+  }
+
+  @media screen and (max-width:320px) {
+    /* CSS for screens that are 320 pixels or less will be put in this section */
+  }
