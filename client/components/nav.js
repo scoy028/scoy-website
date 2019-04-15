@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav'
 export default class Navigation extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="md" bg="light" variant="light" fixed="top">
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
         <Navbar.Brand className="logo" href="#">
           Stephanie Coy
         </Navbar.Brand>

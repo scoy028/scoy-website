@@ -12,17 +12,17 @@ body {
 /****** GRID ******/
 
 .full-width {
-    max-width: 1200px;
+    max-width: 90vw;
     margin: 0 auto;
 }
 
 .half-width {
-    max-width: 600px;
+    max-width: 45vw;
     float: left;
 }
 
 .third-width {
-    max-width: 400px;
+    max-width: 33vw;
     float: left;
 }
 
@@ -36,7 +36,10 @@ body {
     font-size: 1.5em !important;
     color: #bbc085 !important;
     padding: 5vh !important;
-    float: left !important;
+}
+
+.navbar {
+    max-width: 100vw !important;
 }
 
 .mr-auto .nav-links {
@@ -46,23 +49,22 @@ body {
     font-size: 1.1em;
     color: #828282;
     padding-left: 5vw !important;
-    float: right !important;
 }
 
 #intro {
     background: url('../img/field.png');
-    height: 70;
+    height: 105vh;
     background-size: cover;
 }
 
 #intro h2 {
-    width: 1000px;
-    clear: both;
+    /* max-width: 100vw; */
+    /* clear: both; */
     font-family: 'Lora', serif;
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 4em;
+    /* line-height: 5em; */
     color: #bbc085;
-    padding: 300px 0;
+    padding: 40vh 0;
 }
 
 #intro h2 span {
@@ -73,19 +75,18 @@ body {
 /****** ABOUT ******/
 
 #about .full-width {
-    padding: 80px 0;
+    padding: 5vh 0;
 }
 
 #about h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 3em;
 }
 
 #about p {
-    font-size: 21px;
+    font-size: 1.25em;
     color: #7f7f7f;
-    line-height: 42px;
-    padding-right: 50px;
+    line-height: 2em;
 }
 
 
@@ -97,11 +98,11 @@ body {
 }
 
 #work .full-width {
-    padding: 115px 0;
+    padding: 5vh 0;
 }
 
 #work img {
-    padding-bottom: 30px;
+    padding-bottom: 5vh;
 }
 
 #work h3 {
