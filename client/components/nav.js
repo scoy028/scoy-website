@@ -1,28 +1,24 @@
 import React, { Component } from 'react'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
-export default class Nav extends Component {
+export default class Navigation extends Component {
   render() {
     return (
-      <div>
-        <header>
-          <div className="full-width">
-            <div className="one-third-width">
-              <h1>Stephanie Coy</h1>
-            </div>
-            <div className="two-thirds-width">
-              <nav>
-                  <ul>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#work">Work</a></li>
-                  <li><a href="https://medium.com/@stephanie.a.coy">Blog</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  </ul>
-              </nav>
-            </div>
-            <h2><span>Hi,</span> I'm a new developer that loves clean & creative code.</h2>
-          </div>
-        </header>
-      </div>
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
+        <Navbar.Brand className="logo" href="#">
+          Stephanie Coy
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#about" className="nav-links">About</Nav.Link>
+            <Nav.Link href="#work" className="nav-links">Work</Nav.Link>
+            <Nav.Link href="https://medium.com/@stephanie.a.coy" className="nav-links">Blog</Nav.Link>
+            <Nav.Link href="#contact" className="nav-links">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     )
   }
 }
