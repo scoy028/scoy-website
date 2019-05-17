@@ -11,7 +11,7 @@ export default class Main extends Component {
         <Intro />
         <About />
         <Work />
-        {/* <Contact /> */}
+        <Contact />
       </main>
     )
   }

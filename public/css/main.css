@@ -118,48 +118,54 @@ body {
     background-color: #ebebeb;
 }
 
-#contact .full-width {
-    padding: 110px 0;
+#contact-img {
+    border: 1vw solid #ffffff;
 }
 
-#contact-img{
-    border: 12px solid #ffffff;
+#scoy-pic {
+    padding: 10vh 5vw;
 }
 
-#contact h2, #email-header, #socialmedia-header, #contact ul {
-    padding-left: 115px;
+#contact-info {
+    padding: 10vh 1vw;
+    vertical-align: middle;
 }
+
+/* #contact h2, #email-header, #socialmedia-header, #contact ul {
+    padding-left: 2vw;
+} */
 
 #envelope {
-    padding: 0 10px 0 115px;
+    padding: 0 1vw 0 0;
 }
 
 #contact h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 2em;
 }
 
 #email-header{
-    font-size: 32px;
+    font-size: 1.5em;
     font-weight: 400;
-    margin: -30px 0 5px 0;
+    /* margin: -30px 0 5px 0; */
 }
 
 #socialmedia-header {
     font-weight: bold;
-    font-size: 29px;
-    margin: 40px 0 0px 0;
+    font-size: 1.5em;
+    padding: 1em 0 0 0;
 }
 
 #contact a {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.25em;
 }
 
 #contact ul {
     list-style: none;
+    padding: 0;
 }
 
 #contact ul li {
@@ -167,8 +173,8 @@ body {
 }
 
 #contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
+    font-size: 2em;
+    padding: 0 0.25em;
 }
 
 
