@@ -6,28 +6,7 @@ const PORT = process.env.PORT || 8080
 const app = express()
 module.exports = app
 
-const inSecureRedirect = () => {
-  const environments = ['production'];
-  const status = 302;
-  return function(req, res, next) {
-    if (environments.indexOf(process.env.NODE_ENV) >= 0) {
-      if (req.headers['x-forwarded-proto'] !== 'http') {
-        res.redirect(status, 'http://' + req.hostname + req.originalUrl);
-      }
-      else {
-        next();
-      }
-    }
-    else {
-      next();
-    }
-  };
-};
-
 const createApp = () => {
-
-  //forces heroku to redirect from https to http
-  app.use(inSecureRedirect())
 
   // logging middleware
   app.use(morgan('dev'))
