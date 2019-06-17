@@ -111,6 +111,26 @@ body {
     padding: 0 2vw 10vh 2vw;
 }
 
+/****** PROJECTS ******/
+
+#projects {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#projects img {
+    padding: 10vh 5vw;
+}
+
+#projects h3 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 1.6em;
+    max-width: 20vw;
+    margin: 0 auto;
+    padding: 0 0 3vw 0;
+}
+
 
 /****** CONTACT ******/
 

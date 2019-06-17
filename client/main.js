@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import About from './components/about'
 import Contact from './components/contact'
 import Intro from './components/intro'
+import Projects from './components/projects'
 import Work from './components/work'
 
 export default class Main extends Component {
@@ -11,6 +12,7 @@ export default class Main extends Component {
         <Intro />
         <About />
         <Work />
+        <Projects />
         <Contact />
       </main>
     )
